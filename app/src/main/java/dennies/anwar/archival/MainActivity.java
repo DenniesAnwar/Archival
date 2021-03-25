@@ -35,6 +35,7 @@ import java.util.List;
 
 import dennies.anwar.archival.fragments.ComposeFragment;
 import dennies.anwar.archival.fragments.PostFragment;
+import dennies.anwar.archival.fragments.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,16 +61,16 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment = new ComposeFragment();
                 switch (item.getItemId()) {
                     case R.id.action_home:
-                        Toast.makeText(MainActivity.this, "Home!", Toast.LENGTH_SHORT).show();
+
                         fragment = new PostFragment();
                         break;
                     case R.id.action_compose:
-                        Toast.makeText(MainActivity.this, "Compose!", Toast.LENGTH_SHORT).show();
+
                         fragment = new ComposeFragment();
                         break;
                     case R.id.action_profile:
-                        Toast.makeText(MainActivity.this, "Profile!", Toast.LENGTH_SHORT).show();
-                        fragment = new ComposeFragment();
+
+                        fragment = new ProfileFragment();
                         break;
                         
                 }
